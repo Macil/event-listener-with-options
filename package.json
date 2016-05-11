@@ -1,6 +1,6 @@
 {
   "name": "event-listener-with-options",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Polyfill for EventTarget options object support",
   "main": "js/index.js",
   "scripts": {
