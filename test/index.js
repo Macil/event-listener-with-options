@@ -1,3 +1,5 @@
+/* @flow */
+
 import assert from 'assert';
 import sinon from 'sinon';
 
@@ -61,7 +63,7 @@ describe('addEventListenerWithOptions', function() {
     assert.strictEqual(originalRemoveEventListener.callCount, 0);
     assert.strictEqual(window.EventTarget.prototype.addEventListener, originalAddEventListener);
 
-    function attempt(args) {
+    function attempt(args: any[]) {
       const expectedArgs = [...args, undefined, undefined].slice(1, 5);
 
       addEventListener(...args);
@@ -88,7 +90,7 @@ describe('addEventListenerWithOptions', function() {
     assert.strictEqual(originalAddEventListener.callCount, 1);
     assert.strictEqual(window.EventTarget.prototype.addEventListener, originalAddEventListener);
 
-    function attempt(args, expectedArgs) {
+    function attempt(args: any[], expectedArgs: any[]) {
       expectedArgs = [...expectedArgs, undefined, undefined].slice(0, 4);
 
       addEventListener(...args);
@@ -159,7 +161,7 @@ describe('polyfill', function() {
     assert.strictEqual(window.EventTarget.prototype.addEventListener.POLYFILLED_OPTIONS_SUPPORT, true);
     assert.strictEqual(window.EventTarget.prototype.removeEventListener.POLYFILLED_OPTIONS_SUPPORT, true);
 
-    function attempt(args, expectedArgs) {
+    function attempt(args: any[], expectedArgs: any[]) {
       args[0].addEventListener(...args.slice(1));
       const call = originalAddEventListener.lastCall;
       assert.strictEqual(call.thisValue, args[0]);

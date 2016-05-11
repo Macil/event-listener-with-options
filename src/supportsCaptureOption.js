@@ -1,6 +1,8 @@
+/* @flow */
+
 let supportsCaptureOption = false;
 try {
-  let opts = Object.defineProperty({}, 'capture', {
+  let opts = (Object:any).defineProperty({}, 'capture', {
     get: function() {
       supportsCaptureOption = true;
     }

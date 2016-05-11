@@ -1,3 +1,5 @@
+/* @flow */
+
 import supportsCaptureOption from './supportsCaptureOption';
 
 if (!supportsCaptureOption) {
