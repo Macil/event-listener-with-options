@@ -2,7 +2,7 @@
   "name": "add-event-listener-with-options",
   "version": "1.0.0",
   "description": "Polyfill for addEventListener's options object support",
-  "main": "lib/index.js",
+  "main": "js/index.js",
   "scripts": {
     "prepublish": "babel -s inline -d js/ src/ && flow-copy-source -v src js",
     "test": "mocha"
