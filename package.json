@@ -13,6 +13,8 @@
   },
   "keywords": [
     "addEventListener",
+    "removeEventListener",
+    "EventTarget",
     "polyfill"
   ],
   "author": "Chris Cowan <agentme49@gmail.com>",
