@@ -1,5 +1,10 @@
 # event-listener-with-options
 
+[![Circle CI](https://circleci.com/gh/AgentME/event-listener-with-options.svg?style=shield)](http
+s://circleci.com/gh/AgentME/event-listener-with-options)
+[![npm version](https://badge.fury.io/js/event-listener-with-options.svg)](https://badge.fury.io/
+js/event-listener-with-options)
+
 This module exports two functions:
 * `addEventListener(target, type, handler, options)`
 * `removeEventListener(target, type, handler, options)`
@@ -21,5 +26,5 @@ require('add-event-listener-with-options/js/polyfill');
 
 ## Types
 
-Full [Flow Type](http://flowtype.org/) declarations for this module are
-included!
+[Flow](https://flowtype.org/) type declarations for this module are included!
+If you are using Flow, they won't require any configuration to use.
