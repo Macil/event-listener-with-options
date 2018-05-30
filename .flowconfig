@@ -5,7 +5,6 @@
 .*/node_modules/builtin-modules/.*
 .*/node_modules/spdx-.*/.*
 .*/node_modules/.*/\(test\|lib\|example\|samplejson\)/.*\.json
-.*/node_modules/react-motion/.*
 
 [include]
 
@@ -13,6 +12,3 @@
 flow-libs/
 
 [options]
-esproposal.class_static_fields=enable
-esproposal.class_instance_fields=enable
-unsafe.enable_getters_and_setters=true
