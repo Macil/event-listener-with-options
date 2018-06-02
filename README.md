@@ -1,9 +1,7 @@
 # event-listener-with-options
 
-[![Circle CI](https://circleci.com/gh/AgentME/event-listener-with-options.svg?style=shield)](http
-s://circleci.com/gh/AgentME/event-listener-with-options)
-[![npm version](https://badge.fury.io/js/event-listener-with-options.svg)](https://badge.fury.io/
-js/event-listener-with-options)
+[![Circle CI](https://circleci.com/gh/AgentME/event-listener-with-options.svg?style=shield)](https://circleci.com/gh/AgentME/event-listener-with-options)
+[![npm version](https://badge.fury.io/js/event-listener-with-options.svg)](https://badge.fury.io/js/event-listener-with-options)
 
 This module exports two functions:
 * `addEventListener(target, type, handler, options)`
