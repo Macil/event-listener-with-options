@@ -1,15 +1,21 @@
 /* @flow */
 
-let supportsCaptureOption = false;
-try {
-  let opts = (Object:any).defineProperty({}, 'capture', {
-    get: function() {
-      supportsCaptureOption = true;
-    }
-  });
-  window.addEventListener('test', null, opts);
-} catch (e) {
-  //ignore
-}
+let cachedResult = null;
 
-export default supportsCaptureOption;
+export default function supportsCaptureOption(): boolean {
+  if (cachedResult === null) {
+    let result = false;
+    try {
+      const opts = (Object:any).defineProperty({}, 'capture', {
+        get() {
+          result = true;
+        }
+      });
+      window.addEventListener('test', null, opts);
+    } catch (e) {
+      //ignore
+    }
+    cachedResult = result;
+  }
+  return cachedResult;
+}

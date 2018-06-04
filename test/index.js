@@ -59,7 +59,7 @@ describe('addEventListenerWithOptions', function() {
     const originalAddEventListener = window.EventTarget.prototype.addEventListener;
     const originalRemoveEventListener = window.EventTarget.prototype.removeEventListener;
     const {addEventListener, removeEventListener} = require('../src');
-    assert.strictEqual(originalAddEventListener.callCount, 1);
+    assert.strictEqual(originalAddEventListener.callCount, 0);
     assert.strictEqual(originalRemoveEventListener.callCount, 0);
     assert.strictEqual(window.EventTarget.prototype.addEventListener, originalAddEventListener);
 
@@ -87,7 +87,8 @@ describe('addEventListenerWithOptions', function() {
     const originalAddEventListener = window.EventTarget.prototype.addEventListener;
     const originalRemoveEventListener = window.EventTarget.prototype.removeEventListener;
     const {addEventListener, removeEventListener} = require('../src');
-    assert.strictEqual(originalAddEventListener.callCount, 1);
+    assert.strictEqual(originalAddEventListener.callCount, 0);
+    assert.strictEqual(originalRemoveEventListener.callCount, 0);
     assert.strictEqual(window.EventTarget.prototype.addEventListener, originalAddEventListener);
 
     function attempt(args: any[], expectedArgs: any[]) {

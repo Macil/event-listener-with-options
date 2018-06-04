@@ -2,7 +2,7 @@
 
 import supportsCaptureOption from './supportsCaptureOption';
 
-if (!supportsCaptureOption) {
+if (!supportsCaptureOption()) {
   const ETp = window.EventTarget ? window.EventTarget.prototype : window.Node.prototype;
   const originalAddEventListener = ETp.addEventListener;
   const originalRemoveEventListener = ETp.removeEventListener;
