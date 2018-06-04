@@ -1,7 +1,6 @@
 # event-listener-with-options
 
-[![Circle CI](https://circleci.com/gh/AgentME/event-listener-with-options.svg?style=shield)](https://circleci.com/gh/AgentME/event-listener-with-options)
-[![npm version](https://badge.fury.io/js/event-listener-with-options.svg)](https://badge.fury.io/js/event-listener-with-options) [![Greenkeeper badge](https://badges.greenkeeper.io/AgentME/event-listener-with-options.svg)](https://greenkeeper.io/)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/AgentME/event-listener-with-options/blob/master/LICENSE.txt) [![npm version](https://img.shields.io/npm/v/event-listener-with-options.svg?style=flat)](https://www.npmjs.com/package/event-listener-with-options) [![CircleCI Status](https://circleci.com/gh/AgentME/event-listener-with-options.svg?style=shield)](https://circleci.com/gh/AgentME/event-listener-with-options) [![Greenkeeper badge](https://badges.greenkeeper.io/AgentME/event-listener-with-options.svg)](https://greenkeeper.io/)
 
 This module exports two functions:
 * `addEventListener(target, type, handler, options)`
