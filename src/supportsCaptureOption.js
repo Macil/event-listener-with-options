@@ -9,6 +9,7 @@ export default function supportsCaptureOption(): boolean {
       const opts = (Object:any).defineProperty({}, 'capture', {
         get() {
           result = true;
+          return undefined;
         }
       });
       window.addEventListener('test', null, opts);
