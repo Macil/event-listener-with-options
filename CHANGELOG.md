@@ -1,3 +1,7 @@
+## 1.1.0 (2018-09-26)
+
+* Added TypeScript type definitions.
+
 ## 1.0.4 (2018-06-04)
 
 * Lazily check for capture support. Avoids accessing DOM APIs during import, so
