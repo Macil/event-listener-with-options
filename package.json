@@ -3,6 +3,9 @@
   "version": "1.0.4",
   "description": "Polyfill for EventTarget options object support",
   "main": "js/index.js",
+  "sideEffects": [
+    "./js/polyfill.js"
+  ],
   "scripts": {
     "prepare": "rimraf js/ && babel -s inline -d js/ src/ && flow-copy-source -v src js",
     "test": "yarn run lint && yarn run flow_check && mocha",
