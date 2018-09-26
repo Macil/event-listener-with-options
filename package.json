@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "prepare": "rimraf js/ && babel -s inline -d js/ src/ && flow-copy-source -v src js",
-    "test": "yarn run lint && flow check && mocha",
+    "test": "yarn run lint && flow check && mocha && tsc",
     "lint": "eslint .",
     "lint-fix": "eslint . --fix"
   },
@@ -41,7 +41,8 @@
     "flow-copy-source": "^2.0.0",
     "mocha": "^5.2.0",
     "rimraf": "^2.6.1",
-    "sinon": "^6.0.0"
+    "sinon": "^6.0.0",
+    "typescript": "^3.0.3"
   },
   "greenkeeper": {
     "ignore": [
